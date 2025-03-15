@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.heading-text {
+    text-align: center;
+}
+
+.bust {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.head {
+    font-family: 'caveat', sans-serif;
+}
+
+.thisisme {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.james {
+    color: #476f9d ;
+    font-weight: 1000;
+    font-size:  8rem;
+
+}
+
+.webdev {
+    font-size:  3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    line-height: 2em;
+    white-space: nowrap;
+} 
+
+.contact-button {
+  background-color: transparent;
+  color: #476f9d;
+  border: 2px solid ; 
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-size: 25px ;
+  white-space: nowrap;
+}
+
+.contact-button:hover{
+    background-color :#476f9d ;
+    color: white;
+}
+
+.contact-button:active {
+    background-color: rgb(71 111 157/85%);
+}
+
+.container2 {
+    font-family: 'caveat', sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+    background-color:whitesmoke;
+}
+
+
+.digi-draw , .fav-food {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+
+.digi-draw {
+    grid-area: 2/ 2 / 3/ 3;
+}
+
+.fav-food {
+    grid-area: 4 / 2 / 5/ 3;
+}
+
+h2, h3{
+    font-size: 35px;
+    color: 16161d;
+ }
+
+ .body-text {
+    grid-area: 2 / 3 / 3/ 4;
+ }
+
+ .body-text2 {
+    grid-area: 4/ 3 / 5 / 4;
+ }
+
+p1 , p2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: 16161d;
+ }
+
+ p3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 30px;
+    font-family: 'caveat', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+ }
+
+ footer {
+    font-family: 'caveat', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+a {
+    color:#476f9d;
+}
+
+@media (max-width:1240px) {
+    .bust{
+        height: 275px;
+        width: 275px;
+    }
+    .thisisme {
+        font-weight: 200;
+        font-size: 40px;
+    }
+    
+    .james {
+        
+        font-weight: 1000;
+        font-size:  7rem;
+    
+    }
+    
+    .webdev {
+        font-size:  2rem;
+
+    } 
+
+    .contact-button{
+        font-size: 20px;
+    }
+
+    .digi-draw , .fav-food {
+        height: 200px;
+        width: 200px;
+    }
+
+    h2, h3{
+        font-size: 30px;
+    }
+
+    p1 , p2 {
+        font-size: 25px;
+     }
+    
+     p3{
+        font-size: 25px;
+     }
+}
+
+@media (max-width: 999px) {
+    .container {
+        flex-direction: column;
+        align-items:center;
+        margin:0;
+        margin-bottom: 50px;
+    }
+
+    .bust {
+        margin-top:50px;
+        height:250px;
+        width: 250px;
+    }
+
+    .thisisme {
+        font-weight: 200;
+        font-size: 30px;
+    }
+    
+    .james {
+        
+        font-weight: 1000;
+        font-size:  5rem;
+    
+    }
+
+    .contact-button{
+        font-size: 15px;
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .digi-draw , .fav-food {
+        height: 25%;
+        width: 25%;
+    
+    }
+    .digi-draw{
+        margin-top: 50px;
+    }
+    .fav-food {
+        margin-top: 50px;
+    }
+
+    h2{
+        font-size: 25px;
+        
+    }
+
+    h3{
+        font-size: 25px;
+       
+    }
+
+    p1 {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+     }
+
+    p2 {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+     }
+
+     .body-text {
+        text-align: center;
+     }
+
+     .body-text2 {
+        text-align: center;
+     }
+    
+    p3 {
+        font-size: 20px;
+        margin: 15px;
+    }
+}
